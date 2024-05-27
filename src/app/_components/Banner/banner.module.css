@@ -1,0 +1,14 @@
+.banner {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.banner-success {
+  background-color: #86efac; /* green-300 */
+}
+
+.banner-error {
+  background-color: #fca5a5; /* red-300 */
+}
