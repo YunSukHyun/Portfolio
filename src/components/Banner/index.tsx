@@ -1,4 +1,4 @@
-import styles from './Banner.module.css';
+import styles from './banner.module.css';
 
 export type BannerData = {
   message: string;
