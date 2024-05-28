@@ -14,7 +14,11 @@ const Navbar = () => {
 
   return (
     <nav className={styles.nav}>
-      <h1 className={styles.home}>Home</h1>
+      <h1
+        className={styles.home}
+        onClick={() => router.push('/')}>
+        Home
+      </h1>
       <ul className={styles.list}>
         {list.map(({ text, url }) => (
           <li

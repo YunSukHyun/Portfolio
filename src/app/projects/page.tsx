@@ -1,4 +1,4 @@
 const Projects = () => {
-  return <div>Projects</div>;
+  return <div>入れる予定です</div>;
 };
 export default Projects;

@@ -4,12 +4,14 @@ import styles from './page.module.css';
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <Image
-        src={'/profile.webp'}
+      <Image
+        src={'/profile.jpg'}
         alt="profile"
-        width={'auto'}
-        height={'auto'}
-      /> */}
+        width={300}
+        height={300}
+      />
+      <p>入れる予定です</p>
+      <p>反応型適用予定です</p>
     </main>
   );
 }
