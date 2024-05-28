@@ -1,13 +1,15 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "./_components/Navbar";
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Image from 'next/image';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "自己紹介",
-  description: "ユン·ソクヒョンのポートフォリオ",
+  title: '自己紹介',
+  description: 'ユン·ソクヒョンのポートフォリオ',
 };
 
 export default function RootLayout({
@@ -18,8 +20,16 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <Navbar/>
-        {children}
+        <Image
+          className="background"
+          src={'/background.png'}
+          alt="img"
+          priority
+          fill
+        />
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 import { ChangeEvent, FormEvent, useState } from 'react';
 import Banner, { BannerData } from '../Banner';
+import styles from './contactForm.module.css';
 
 type Form = {
   from: string;
@@ -23,7 +24,6 @@ const ContactForm = () => {
   };
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(form);
     setBanner({ message: 'Success!', state: 'error' });
     setTimeout(() => {
       setBanner(null);
@@ -31,14 +31,14 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact-form-container">
+    <section className={styles.contactSection}>
       {banner && <Banner banner={banner} />}
       <form
         onSubmit={onSubmit}
-        className="contact-form">
+        className={styles.form}>
         <label
           htmlFor="from"
-          className="form-label">
+          className={styles.label}>
           Your Email
         </label>
         <input
@@ -49,11 +49,11 @@ const ContactForm = () => {
           autoFocus
           value={form.from}
           onChange={onChange}
-          className="form-input"
+          className={styles.input}
         />
         <label
           htmlFor="subject"
-          className="form-label">
+          className={styles.label}>
           Subject
         </label>
         <input
@@ -61,14 +61,13 @@ const ContactForm = () => {
           id="subject"
           name="subject"
           required
-          autoFocus
           value={form.subject}
           onChange={onChange}
-          className="form-input"
+          className={styles.input}
         />
         <label
           htmlFor="message"
-          className="form-label">
+          className={styles.label}>
           Message
         </label>
         <textarea
@@ -78,9 +77,9 @@ const ContactForm = () => {
           required
           value={form.message}
           onChange={onChange}
-          className="form-textarea"
+          className={styles.textarea}
         />
-        <button className="form-button">Submit</button>
+        <button className={styles.button}>Submit</button>
       </form>
     </section>
   );

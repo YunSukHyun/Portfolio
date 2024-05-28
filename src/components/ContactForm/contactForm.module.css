@@ -1,0 +1,48 @@
+.contactSection {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* gap-2 equivalent */
+
+  padding: 1rem; /* p-4 equivalent */
+  background-color: #334155; /* bg-slate-700 equivalent */
+  border-radius: 0.75rem; /* rounded-xl equivalent */
+  color: white;
+}
+
+.label {
+  font-weight: 600; /* font-semibold equivalent */
+}
+
+.input {
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.textarea {
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.button {
+  background-color: #facc15; /* bg-yellow-200 equivalent */
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #eab308; /* bg-yellow-300 equivalent */
+}

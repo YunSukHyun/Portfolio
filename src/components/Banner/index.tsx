@@ -1,4 +1,4 @@
-import React from 'react';
+import styles from './Banner.module.css';
 
 export type BannerData = {
   message: string;
@@ -10,7 +10,7 @@ export default function Banner({ banner: { message, state } }: { banner: BannerD
   const icon = isSuccess ? '✅' : '🔥';
 
   return (
-    <p className={`banner ${isSuccess ? 'banner-success' : 'banner-error'}`}>
+    <p className={`${styles.banner} ${isSuccess ? styles.success : styles.error}`}>
       {`${icon} ${message}`}
     </p>
   );

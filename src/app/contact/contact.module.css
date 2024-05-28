@@ -1,0 +1,36 @@
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.contactTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  /* margin: 0.5rem 0; */
+}
+
+.contactLinks {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  list-style: none;
+  padding: 0;
+}
+
+.contactIcon {
+  font-size: 3rem; /* 5xl equivalent */
+  transition: color 0.3s;
+  text-decoration: none;
+  color: inherit; /* Ensure it inherits the current text color */
+}
+
+.contactIcon:hover {
+  color: #facc15; /* yellow-400 equivalent */
+}
+
+.contactSubtitle {
+  font-size: 2rem; /* 3xl equivalent */
+  font-weight: bold;
+}
