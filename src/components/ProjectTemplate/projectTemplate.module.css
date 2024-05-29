@@ -1,0 +1,32 @@
+.projectContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.projectTitle {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.projectDescription {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.projectImage {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.projectFile a {
+  font-size: 1em;
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.projectFile a:hover {
+  text-decoration: underline;
+}

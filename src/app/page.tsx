@@ -9,6 +9,7 @@ export default function Home() {
         alt="profile"
         width={300}
         height={300}
+        className={styles.profile}
       />
       <p>入れる予定です</p>
       <p>反応型適用予定です</p>

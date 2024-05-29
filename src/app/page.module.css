@@ -1,4 +1,11 @@
 .main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblues;
   width: 100%;
+}
+
+.profile {
+  border-radius: 25%;
 }
