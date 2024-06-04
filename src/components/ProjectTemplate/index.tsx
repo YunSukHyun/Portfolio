@@ -1,34 +1,21 @@
+import { Project } from '@/types/projects';
 import styles from './projectTemplate.module.css';
 
 type ProjectProps = {
-  project: {
-    title: string;
-    description: string;
-    imageUrl?: string;
-    fileUrl?: string;
-  };
+  project: Project;
 };
 
-const ProjectTemplate = ({ project }: ProjectProps) => {
+const ProjectTemplate = ({ project: { title, description, imageUrl } }: ProjectProps) => {
   return (
     <div className={styles.projectContainer}>
-      <h1 className={styles.projectTitle}>{project.title}</h1>
-      <p className={styles.projectDescription}>{project.description}</p>
-      {project.imageUrl && (
+      <h1 className={styles.projectTitle}>{title}</h1>
+      <p className={styles.projectDescription}>{description}</p>
+      {imageUrl && (
         <img
           className={styles.projectImage}
-          src={project.imageUrl}
-          alt={project.title}
+          src={imageUrl}
+          alt={title}
         />
-      )}
-      {project.fileUrl && (
-        <div className={styles.projectFile}>
-          <a
-            href={project.fileUrl}
-            download>
-            Download File
-          </a>
-        </div>
       )}
     </div>
   );

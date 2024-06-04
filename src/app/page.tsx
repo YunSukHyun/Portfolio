@@ -11,8 +11,8 @@ export default function Home() {
         height={300}
         className={styles.profile}
       />
-      <p>入れる予定です</p>
-      <p>反応型適用予定です</p>
+      <p className={styles.text1}>入れる予定です</p>
+      <p className={styles.text2}>反応型適用予定です</p>
     </main>
   );
 }
